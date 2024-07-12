@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React,{useState} from "react";
+import ReviewArea from "./Components/ReviewArea";
 import './App.css';
 
 function App() {
+  const [title,setTitle] = useState("Hotel Crystal Pashupati");
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header></header>
+      <div className="review-landing-page">
+        <h2 className = 'hotel-title'>Welcome to {title}</h2>
+        <div className = "img-container">
+         <img src="./hotelsample.jpg"/>
+         
+        </div>
+      </div>
+      <div className="review-area">
+        <ReviewArea/>
+      </div>
     </div>
+
   );
 }
 
