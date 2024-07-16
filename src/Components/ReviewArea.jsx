@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react"
 import Groq from "groq-sdk";
 // .............................
 import "./css/ReviewArea.css"
+import "./css/ResponsiveReviewBox.css"
 // ...............................
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
@@ -26,7 +27,7 @@ const ReviewArea=()=>{
            messages: [
              {
                role: "user",
-               content: "write a good unique review for hotel in 3lines without hotel name",
+               content: "write a good unique review for hotel in 3lines without hotel name in easy english",
              },
            ],
            model: "llama3-8b-8192",
@@ -43,16 +44,20 @@ const ReviewArea=()=>{
         
             <h3>Give Review Hassle Free</h3>
             
-            <div className="ai-review">
-                <textarea disabled value = {value} rows={10} cols={60}>
-
-              
-                </textarea>
-                <div className="btn-container">
-                <button className="btn">Copy</button>
-                <button className="btn">Click to review</button>
-            </div>
-            </div>
+           
+      <div className="container">
+        <textarea disabled value = {value}  className="textarea" ></textarea>
+        <a href="https://www.google
+        .com/maps/place/SAMA+Coffee+Hou
+        se/@27.7119382,85.3078004,17z/data=
+        !4m18!1m9!3m8!1s0x39eb19a840b9cd21:
+        0x86dacc355de53f6f!2sSAMA+Coffee+House!8m2!3d27.
+        7119382!4d85.3078004!9m1!1b1
+        !16s%2Fg%2F11p5n5fpty!3m7!1s0x39e
+        b19a840b9cd21:0x86dacc355de53f6f!8m2!3d27.7
+        119382!4d85.3078004!9m1!1b1!16s%2Fg%2F11p5n5
+        fpty?entry=ttu" onClick={()=>{navigator.clipboard.writeText(value); }} className="button">Copy & Review</a>
+    </div>
             
         </>
     )
