@@ -47,8 +47,7 @@ const ReviewArea=()=>{
            
       <div className="container">
         <textarea disabled value = {value}  className="textarea" ></textarea>
-        <a href="https://www.google
-        .com/maps/place/SAMA+Coffee+Hou
+        <a href="https://www.google.com/maps/place/SAMA+Coffee+Hou
         se/@27.7119382,85.3078004,17z/data=
         !4m18!1m9!3m8!1s0x39eb19a840b9cd21:
         0x86dacc355de53f6f!2sSAMA+Coffee+House!8m2!3d27.
