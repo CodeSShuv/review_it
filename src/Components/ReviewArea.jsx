@@ -27,7 +27,7 @@ const ReviewArea=()=>{
            messages: [
              {
                role: "user",
-               content: "write a good unique review for hotel in 3lines without hotel name in easy english",
+               content: "write a good unique review for cafe in 3 lines without hotel name just like 13 yearold child",
              },
            ],
            model: "llama3-8b-8192",
@@ -42,7 +42,7 @@ const ReviewArea=()=>{
     return (
         <>
         
-            <h3>Give Review Hassle Free</h3>
+            {/* <h3 className="heading3">Give Review Hassle Free</h3> */}
             
            
       <div className="container">
