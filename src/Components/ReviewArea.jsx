@@ -47,15 +47,8 @@ const ReviewArea=()=>{
            
       <div className="container">
         <textarea disabled value = {value}  className="textarea" ></textarea>
-        <a href="https://www.google.com/maps/place/SAMA+Coffee+Hou
-        se/@27.7119382,85.3078004,17z/data=
-        !4m18!1m9!3m8!1s0x39eb19a840b9cd21:
-        0x86dacc355de53f6f!2sSAMA+Coffee+House!8m2!3d27.
-        7119382!4d85.3078004!9m1!1b1
-        !16s%2Fg%2F11p5n5fpty!3m7!1s0x39e
-        b19a840b9cd21:0x86dacc355de53f6f!8m2!3d27.7
-        119382!4d85.3078004!9m1!1b1!16s%2Fg%2F11p5n5
-        fpty?entry=ttu" onClick={()=>{navigator.clipboard.writeText(value); }} className="button">Copy & Review</a>
+        
+        <a href="https://reviewthis.biz/damp-wind-6170" onClick={()=>{navigator.clipboard.writeText(value); }} className="button">Copy & Review</a>
     </div>
             
         </>
