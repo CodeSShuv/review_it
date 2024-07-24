@@ -60,3 +60,6 @@ img{
     align-items: center;
     flex-flow: column;
 }
+.disable{
+    pointer-events: none;
+}

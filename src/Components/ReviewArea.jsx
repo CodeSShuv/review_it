@@ -9,6 +9,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 const ReviewArea=()=>{
     const [value,setValue] = useState("");
+    const [disable, setDisable] = useState(true)
     const generateReview = ()=>{
         
         const groq = new Groq({ apiKey: "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",dangerouslyAllowBrowser: true });
@@ -19,6 +20,7 @@ const ReviewArea=()=>{
        //   console.log(chatCompletion.choices[0]?.message?.content || "")
             
         setValue (  chatCompletion.choices[0]?.message?.content || "");
+        setDisable(false)
        
        }
        
@@ -27,7 +29,7 @@ const ReviewArea=()=>{
            messages: [
              {
                role: "user",
-               content: "write a good unique review for cafe in 3 lines without hotel name just like 13 yearold child",
+               content: "write a good unique review for cafe which offers only chicken,pizza,burger,fry-rice,coffee in 3 lines without hotel name just like 13 yearold child",
              },
            ],
            model: "llama3-8b-8192",
@@ -48,7 +50,7 @@ const ReviewArea=()=>{
       <div className="container">
         <textarea disabled value = {value}  className="textarea" ></textarea>
         
-        <a href="https://reviewthis.biz/damp-wind-6170" onClick={()=>{navigator.clipboard.writeText(value); }} className="button">Copy & Review</a>
+        <a href="https://reviewthis.biz/damp-wind-6170" onClick={()=>{navigator.clipboard.writeText(value); }} className={`button${disable?" disable":""}`}>Copy & Review</a>
     </div>
             
         </>
