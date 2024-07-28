@@ -32,7 +32,7 @@ const ReviewArea=()=>{
            messages: [
              {
                role: "user",
-               content: "write a good unique review for cafe which offers only chicken,pizza,burger,fry-rice,coffee in 3 lines without hotel name just like 13 yearold child without double inverted comma",
+               content: "write a good unique review for cafe in 3 lines without hotel name just like 13 yearold child without double inverted comma",
              },
            ],
            model: "llama3-8b-8192",
