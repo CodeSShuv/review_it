@@ -4,10 +4,11 @@ import Groq from "groq-sdk";
 import "./css/ReviewArea.css"
 import "./css/ResponsiveReviewBox.css"
 // ...............................
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 
-const ReviewArea=()=>{
+
+const ReviewArea=({reviewUrl})=>{
+
     const [value,setValue] = useState("");
     const [disable, setDisable] = useState(true)
     const generateReview = ()=>{
@@ -41,9 +42,10 @@ const ReviewArea=()=>{
       main()
     }
     useEffect(()=>{
-      generateReview();
+      setValue(generateReview())
     },[])
-    // setValue(generateReview())
+   
+    // 
     return (
         <>
         
@@ -53,10 +55,13 @@ const ReviewArea=()=>{
       <div className="container">
         <textarea disabled value = {value}  className="textarea" ></textarea>
         
-        <a href="https://reviewthis.biz/damp-wind-6170" onClick={()=>{navigator.clipboard.writeText(value); }} className={`button${disable?" disable":""}`}>Copy & Review</a>
+        <a href={reviewUrl} onClick={()=>{navigator.clipboard.writeText(value); }} className={`button${disable?" disable":""}`}>Copy & Review</a>
     </div>
             
         </>
     )
 }
+ReviewArea.defaultProps = {
+  reviewUrl :"https://reviewthis.biz/damp-wind-6170"
+};
 export default ReviewArea;
