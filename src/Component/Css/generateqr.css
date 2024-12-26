@@ -1,0 +1,17 @@
+.inputContainer{
+    background-color: rgba(220, 220, 220, 0.486);
+    padding: .6rem;
+    border-radius: .9rem;
+}
+.inputContainer input{
+    width: 25rem;
+    font-size: 1.3rem;
+    border: none;
+    background-color: transparent;
+    color: gray;
+}
+.inputContainer input:focus{
+    border: none;
+    outline: none;
+
+}

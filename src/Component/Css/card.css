@@ -1,0 +1,16 @@
+.none{
+    display: none;
+}
+.upperBody{
+    display: flex;
+    justify-content: space-between;
+}
+.midBody{
+    display: flex;
+}
+.rounded{
+    padding: .2rem;
+    border-radius:40%!important;
+    color: white;
+    font-size: .8rem;
+}
