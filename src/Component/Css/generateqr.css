@@ -3,13 +3,13 @@
     padding: .6rem;
     border-radius: .9rem;
 }
-.inputContainer input{
+/* .inputContainer{
     width: 25rem;
     font-size: 1.3rem;
     border: none;
     background-color: transparent;
     color: gray;
-}
+} */
 .inputContainer input:focus{
     border: none;
     outline: none;

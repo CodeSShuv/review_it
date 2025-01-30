@@ -3,8 +3,13 @@
     align-items: center;
     justify-content: flex-start;
 }
+.heading{
+    padding-left: .3rem;
+}
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     /* align-items: center; */
     /* justify-content: space-between; */
 }

@@ -3,3 +3,34 @@
     justify-content: space-between;
     align-items: center;
 }
+.navbar{
+    position:relative;
+    /* top: top; */
+    width: 100%;
+}
+.navbar-brand{
+    overflow: hidden;
+    width: 10rem;
+    height: 100px;
+    /* display: flex; */
+    /* object-fit: contain; */
+    /* background-color: red; */
+    position: relative;
+    /* background-image: "../img/byaparhub.com-min.png"); */
+}
+/* .cropped-image {
+    
+  } */
+  
+.navbar-brand img{
+   
+        width: 100%;
+        /* max-width: 1000px; */
+        height: 100%; /* Maintains aspect ratio */
+        border-radius: 8px; /* Optional: for rounded corners */
+      object-fit: contain;
+      width: 150px; /* Original width */
+    height: 100px; /* Original height */
+    /* clip-path: inset(1rem 2rem 2rem 5rem); Crops the image inside the specified area */
+    position: relative;
+}

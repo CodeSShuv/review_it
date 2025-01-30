@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Css/card.css"
+import { Link } from 'react-router-dom'
 const Card = (props) => {
     return (
         <div className="card d-flex" style={{width: "19rem",marginLeft:"2rem"}}>
@@ -21,7 +22,7 @@ const Card = (props) => {
                 <li>{props.item2}</li>
                 <li className={`${props.item3 === undefined?"none":""}`}>{props.item3}</li>
                </ul>
-               <button className='btn btn-success'>{props.btn}</button>
+               <Link to={"/form"} className='btn btn-success' >{props.btn}</Link>
             </div>
         </div>
     )

@@ -5,8 +5,8 @@ const GenerateQr = () => {
     <div className='generateQrContainer'>
       <div className='inputContainer'>
 
-        <input type="text" placeholder='Get your AI QR' />
-        <button className='btn btn-success'>Generate</button>
+        
+        <a  href="/pricing"className='btn btn-success'>Generate QR</a>
       </div>
     </div>
   )
