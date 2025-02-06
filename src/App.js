@@ -37,7 +37,7 @@ const App = () => {
         <Routes>
           {/* <Route path='/form' element={<ApplyForm/>}/> */}
           {/* <Route path='/review_it' element={<Review/>}/> */}
-          <Route path='/review'
+          <Route path='/review_it'
             element={<MoodQuestion
               moodQuestion={moodQuestion}
               setMoodQuestion={setMoodQuestion}
@@ -47,7 +47,7 @@ const App = () => {
 
           />
           {/* <Route path='/pricing' element={<Pricing/>}/> */}
-          <Route path='/review/generate' element={<GenerateReview
+          <Route path='/review_it/generate' element={<GenerateReview
             moodQuestion={moodQuestion}
             dataFetch={dataFetch}
             setDataFetch={setDataFetch}

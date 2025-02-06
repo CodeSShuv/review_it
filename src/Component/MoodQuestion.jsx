@@ -84,6 +84,7 @@ const style={
         border:"none",
         padding:".6rem",
         borderRadius:"3rem",
-        margin:"1rem"
+        margin:"1rem",
+        // marginLeft:"rem"
     }
 }
