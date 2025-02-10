@@ -12,7 +12,7 @@ const GenerateReview = ({ moodQuestion, setDataFetch, dataFetch }) => {
 
     // setData(parsedData)
     setData(parsedData)
-    console.log(parsedData)
+
 
 
   }
@@ -48,7 +48,7 @@ const GenerateReview = ({ moodQuestion, setDataFetch, dataFetch }) => {
 
   }
     , [])
-    {console.log(data )}
+
   return (
     
     data && data.map((e,i) => {

@@ -39,10 +39,10 @@ const MoodQuestion = ({moodQuestion,setMoodQuestion,setDataFetch,dataFetch}) => 
             })
         }
         const urlPart = window.location.href.split("?")[1];
-        navigate(`/review/generate/?${urlPart}`)
+        navigate(`/review_it/generate/?${urlPart}`)
         generateData(moodQuestion)
     }
-  
+  //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
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <h1 className="text-2xl font-bold mb-6">How is your mood? 😊</h1>
@@ -84,7 +84,7 @@ const style={
         border:"none",
         padding:".6rem",
         borderRadius:"3rem",
-        margin:"1rem",
+        margin:"1rem auto",
         // marginLeft:"rem"
     }
 }
