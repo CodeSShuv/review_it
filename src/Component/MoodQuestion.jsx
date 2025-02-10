@@ -42,7 +42,7 @@ const MoodQuestion = ({moodQuestion,setMoodQuestion,setDataFetch,dataFetch}) => 
         navigate(`/review_it/generate/?${urlPart}`)
         generateData(moodQuestion)
     }
-  //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
+  
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100">
       <h1 className="text-2xl font-bold mb-6">How is your mood? 😊</h1>
